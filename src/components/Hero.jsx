@@ -1,5 +1,6 @@
 import React from "react";
 import HeroImage from "../assets/my.jpg";
+import pdf from "../assets/SurajChavan.pdf"
 
 const Hero = () => {
   return (
@@ -26,12 +27,12 @@ const Hero = () => {
         >
           Contact With Me
         </button>
-        <button
+        <a href={pdf} type="_blank"
           className="bg-gradient-to-r from-pink-400 to-yellow-500 text-white hidden md:inline
             transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full"
         >
           Resume
-        </button>
+        </a>
       </div>
     </div>
   );
